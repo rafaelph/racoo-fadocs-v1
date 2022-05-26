@@ -31,6 +31,5 @@ yarn-error.log*
 /racoo_fadocs_front/node_modules
 /racoo_fadocs_front/build
 /racoo_fadocs_front/.env
-/racoo_fadocs_front/.env.production
 /racoo_fadocs_front/package-lock.json
 /racoo_fadocs_front/yarn.lock
