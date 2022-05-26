@@ -1,0 +1,5 @@
+export const FILES_LOAD = 'FILES_LOAD';
+export const IMAGE_LOAD = 'IMAGE_LOAD';
+export const STORE_DRIVE_FILE = 'STORE_DRIVE_FILE';
+export const REMOVE_DRIVE_FILE = 'REMOVE_DRIVE_FILE';
+export const CLEAR_DRIVE_FILES = 'CLEAR_DRIVE_FILES';

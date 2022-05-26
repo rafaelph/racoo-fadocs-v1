@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  if isResultUrl
+    p  Ingrese a la siguiente #[a( href=url, target="_blank") link] para obtener el código de acceso
+    p Una vez obtenido el código de acceso, agregarlo en el siguiente cuadro de texto y pulsar el botón Generar token
+    if !isResultError
+      form(method="POST" action="/code")
+        div(class="form-group")
+          label Código
+          input(type="test" class="form-control" id="code" aria-describedby="codeHelp" placeholder="Inserte el código" name="code")
+        button(type="submit" class="btn btn-primary") Generar token
+        if isResultToken
+          p Token obtenido:
+          pre
+            code #{token}
+    else 
+      p(class="text-danger") #{errorMessage}
+  else 
+    p Usted ya cuenta con un token de acceso

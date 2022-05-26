@@ -1,0 +1,20 @@
+.cr-header {
+  margin-bottom: $spacer * .5;
+  border-bottom: $border-width solid $border-color;
+
+  &__nav-right {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  &__user-popover {
+    min-width: 250px;
+    padding: 0;
+    border: 0;
+
+    .popover-body {
+      padding: 0;
+    }
+  }
+}
