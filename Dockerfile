@@ -1,7 +1,7 @@
 FROM node:14.17-alpine AS node
 WORKDIR /app
 COPY ./racoo_fadocs_front .
-COPY .env.production .env
+COPY ./racoo_fadocs_front/.env.production ./racoo_fadocs_front/.env
 RUN npm i
 RUN npm run build
 
